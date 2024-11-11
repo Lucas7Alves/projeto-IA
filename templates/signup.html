@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">Início</a>
+            <div class="navbar-links">
+                <a href="/care">Cuidados</a>
+                <a href="/diagnostic">Diagnóstico</a>
+                <a href="/login">Login</a>
+                <a href="/signup">Cadastro</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Cadastro</h1>
+        <div class="form-box">
+            <form id="signup-form">
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="password" placeholder="Senha" required>
+                <div class="diagnosis-question">
+                    <label>Já foi diagnosticado com pneumonia?</label>
+                    <select required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* Configurações específicas para a página de cuidados */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza a container */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Lista de cuidados */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}

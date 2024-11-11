@@ -1,0 +1,107 @@
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 50%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 1.8em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Upload de arquivo */
+input[type="file"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Barra de carregamento */
+.loading-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+    overflow: hidden;
+}
+
+.loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50;
+    animation: load 2s infinite;
+}
+
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+/* Exibição do resultado */
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.normal {
+    color: green;
+}
+
+.pneumonia {
+    color: red;
+}
+
+/* Pré-visualização da imagem */
+#image-preview {
+    display: none;
+    width: 100%;
+    max-width: 350px; /* Aumenta o tamanho máximo da imagem */
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    object-fit: cover;
+}
