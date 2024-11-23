@@ -1,0 +1,30 @@
+/* index.css */
+/* Configurações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f2ff; /* Azul suave */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Para garantir que ocupe toda a tela */
+}
+.container {
+  width: 90%;
+  max-width: 700px; /* Aumentando um pouco a largura */
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: auto; /* Centraliza horizontalmente */
+}
+/* Título */
+h1 {
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o título */
+}

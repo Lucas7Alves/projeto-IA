@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f2ff;
+  min-height: 100vh;
+  margin: 45px 0px 0px 0px;
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 1em;
+}
+
+.container p {
+  padding-top: 30px;
+}
+.navbar {
+  background-color: #007bff;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1em;
+}
+.navbar a:hover {
+  color: #ffd700;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  bottom: 0;
+  background-color: #007bff;
+  color: white;
+}
+
+/* mission */
+.mission-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.mission-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.4;
+}
+
+[data-animate="fade-in"].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
